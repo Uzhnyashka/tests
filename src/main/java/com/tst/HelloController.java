@@ -11,12 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Created by bobyk on 19/04/16.
  */
-
-@Controller
 public class HelloController extends AbstractController {
 
     @Override
-    @RequestMapping(value = ("/welcome"))
+
     protected ModelAndView handleRequestInternal(HttpServletRequest request,
                                                  HttpServletResponse response) throws Exception {
 
