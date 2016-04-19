@@ -6,6 +6,8 @@
 
     <bean name="/welcome.htm"
           class="com.tst.HelloController" />
+    <bean name="/login.htm"
+          class="com.tst.LoginController"/>
 
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver" >

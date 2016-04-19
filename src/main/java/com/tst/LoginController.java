@@ -11,14 +11,16 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Created by bobyk on 19/04/16.
  */
-public class HelloController extends AbstractController {
+
+@Controller
+public class LoginController extends AbstractController{
+
 
     @Override
-    protected ModelAndView handleRequestInternal(HttpServletRequest request,
-                                                 HttpServletResponse response) throws Exception {
-
-        ModelAndView model = new ModelAndView("HelloWorld");
-        model.addObject("msg", "hello world");
+    @RequestMapping(value = "/login")
+    protected ModelAndView handleRequestInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
+        ModelAndView model = new ModelAndView("Login");
+        model.addObject("mmem", "bitch");
 
         return model;
     }

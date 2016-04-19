@@ -13,5 +13,10 @@
 <body>
     <h1>Spring MVC Hello World Expamle</h1>
     <h2>${msg}</h2>
+    <form action="/login.htm" method="post">
+        Username:<input type="text" name="uname"/> </br>
+        Password:<input type="password" name="pass"/> </br>
+        <input type="submit" value="Login"/>
+    </form>
 </body>
 </html>
