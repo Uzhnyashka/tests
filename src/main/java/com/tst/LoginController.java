@@ -17,10 +17,10 @@ public class LoginController extends AbstractController{
 
 
     @Override
-    @RequestMapping(value = "/login")
+    //@RequestMapping(value = "/login")
     protected ModelAndView handleRequestInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
         ModelAndView model = new ModelAndView("Login");
-        model.addObject("mmem", "bitch");
+        model.addObject("bla", "user");
 
         return model;
     }
